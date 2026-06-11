@@ -1,0 +1,18 @@
+This folder contains screenshots of the Nanonets Invoice Automation workflow.
+
+Screenshots included:
+1. Nanonets homepage
+2. Nanonets Agents dashboard
+3. API Connectors page
+4. Google Sheets connector
+5. Agent Configure tab - instruction
+6. Add tool - Google Sheets search
+7. Google Sheets Update tool added
+8. Create Configured Tool dialog
+9. Access Token - Google account selection
+10. Run when - email trigger setup
+11. Gmail - invoices sent to agent
+12. Tasks page - running and completed
+13. Task detail - data extraction in progress
+14. Task detail - milestone completed
+15. Extracted Invoices - Google Sheet output
