@@ -21,12 +21,125 @@ This project automates the entire invoice data extraction process using **Nanone
 
 ```
 📧 Invoice PDF arrives via email
-       ↓
+        ↓
 🤖 Nanonets Agent reads and extracts data
-       ↓
+        ↓
 📊 Data saved automatically to Google Sheets
-       ↓
+        ↓
 ✅ Done — in under 2 minutes
+```
+
+---
+
+## 🚀 Step-by-Step Workflow
+
+### Step 1 — Nanonets Homepage
+![Nanonets Homepage](Nanonets%20homepage.png)
+
+> Navigate to nanonets.com and click **Get Started** to create your free account.
+
+---
+
+### Step 2 — Nanonets Agents Dashboard
+![Nanonets Agent Dashboard](Nanonets%20Agent%20dashboard.png)
+
+> After logging in, you land on the Agents dashboard. This is the central hub for all your document automation tasks.
+
+---
+
+### Step 3 — Connect Google Sheets
+![Google Sheets Connector](Google%20Sheets%20connector.png)
+
+> Go to **Connectors** in the sidebar. Find Google Sheets and click **Connect**. Authorize your Google account via OAuth.
+
+---
+
+### Step 4 — API Connectors Page
+![API Connectors Page](API%20Connectors%20Page.png)
+
+> Nanonets supports connections to Microsoft Outlook, SharePoint, Gmail, Teams, SAP, Dynamics, PostgreSQL, and more — all available from this page.
+
+---
+
+### Step 5 — Configure the Agent
+![Agent Configure Tab](Agent%20Configure%20tab%20-%20instruction.png)
+
+> Create a new agent and enter this plain-English instruction:
+> *"When a new invoice is uploaded, extract invoice number, date, vendor name, and total amount and save it to Google Sheets"*
+
+---
+
+### Step 6 — Add Google Sheets Tool
+![Add Tool - Google Sheets Search](Add%20tool%20-%20Google%20Sheets%20Search.png)
+
+> Click **+ Add tool**, search for "google sheets" and select **Google Sheets Update**.
+
+---
+
+### Step 7 — Google Sheets Tool Added
+![Google Sheets Update Tool Added](Google%20Sheets%20Update%20tool%20Added.png)
+
+> The tool appears as a tag below the instruction box — the agent now knows where to save extracted data.
+
+---
+
+### Step 8 — Create Configured Tool
+![Create Configured Tool Dialog](Create%20Configured%20Tool%20dialog.png)
+
+> Fill in the display name and description for the tool so the AI understands its purpose.
+
+---
+
+### Step 9 — Link Google Account
+![Access Token - Google Account Selection](Access%20Token%20-%20Google%20account%20selection.png)
+
+> Select your connected Google account from the Access Token dropdown to authorize write access to Sheets.
+
+---
+
+### Step 10 — Set Email Trigger
+![Run When - Email Trigger Setup](Run%20when%20-%20email%20trigger%20setup.png)
+
+> Click **Run when...** and copy your agent's unique inbound email address. Any invoice emailed here triggers the agent automatically.
+
+---
+
+### Step 11 — Send Invoices via Gmail
+![Gmail - Invoices Sent to Agent](Gmail%20-%20invoices%20sent%20to%20agent.png)
+
+> Attach invoice PDFs and send to the agent's inbound email. 10 invoices were processed in this project in a single email.
+
+---
+
+### Step 12 — Monitor Tasks
+![Task Page - Running and Completed](Task%20Page%20-%20running%20and%20completed.png)
+
+> Go to the **Tasks** page to monitor status in real time — Running or Completed with full audit trail.
+
+---
+
+### Step 13 — Milestone Completed
+![Task Detail - Milestone Completed](Task%20detail%20-%20milestone%20compeleted.png)
+
+> The agent confirms extraction is complete: *"Extracted invoice details from all 10 invoices and saved them to a new Google Sheet."*
+
+---
+
+### Step 14 — Results in Google Sheets
+![Extracted Invoices - Google Sheet Output](Extracted%20Invoices%20-%20Google%20Sheet%20output.png)
+
+> All 10 invoices extracted and structured automatically — Invoice Number, Date, Vendor Name, Total Amount — zero manual entry.
+
+---
+
+## 📊 Results
+
+```
+Total Invoices Processed  :  10
+Fields Extracted Per File :  4
+Total Data Points         :  40
+Processing Time           :  Under 2 minutes
+Manual Effort Required    :  Zero
 ```
 
 ---
@@ -47,58 +160,7 @@ This project automates the entire invoice data extraction process using **Nanone
 - 🔷 **Nanonets Agents** — AI agent platform for document workflows
 - 🟢 **Google Sheets** — Output destination via native API connector
 - 📧 **Gmail** — Email trigger to auto-run the agent
-- 📄 **PDF Invoices** — Input files (10 invoices processed in this project)
-
----
-
-## 🚀 How It Works — Step by Step
-
-**Step 1 — Connect Google Sheets**
-Go to Nanonets → Connectors → Click Connect on Google Sheets → Authorize your Google account
-
-**Step 2 — Create the Agent**
-Go to Agents → New Agent → Configure tab → Enter this instruction:
-
-```
-When a new invoice is uploaded, extract invoice number, date, 
-vendor name, and total amount and save it to Google Sheets
-```
-
-**Step 3 — Add Google Sheets Tool**
-Click + Add tool → Search "google sheets" → Select Google Sheets Update → Link your Google account → Create Tool
-
-**Step 4 — Set Email Trigger**
-Click Run when... → Copy your agent's unique inbound email address
-
-**Step 5 — Send Invoices**
-Email your invoice PDFs to the agent's inbound address → Agent runs automatically
-
-**Step 6 — Check Output**
-Open Google Sheets → All invoice data extracted, structured, and saved ✅
-
----
-
-## 📊 Results
-
-```
-Total Invoices Processed  :  10
-Fields Extracted Per File :  4
-Total Data Points         :  40
-Processing Time           :  Under 2 minutes
-Manual Effort Required    :  Zero
-```
-
----
-
-## 📈 Why This Beats Manual Entry
-
-| | Manual Process | Nanonets Agent |
-|--|--|--|
-| Time per invoice | 3–5 mins | Seconds |
-| Human effort | High | Zero |
-| Error risk | High | Minimal |
-| Scalability | Limited | Unlimited |
-| Audit trail | None | Full logs |
+- 📄 **PDF Invoices** — 10 invoices processed in this project
 
 ---
 
@@ -107,17 +169,7 @@ Manual Effort Required    :  Zero
 - Process thousands of invoices in a single batch
 - Chain agents: Extract → Validate → Route for Approval → Log to ERP
 - Connect to SAP, Microsoft Dynamics, Sage Intacct, PostgreSQL
-- Works across teams — anyone can trigger it by forwarding an email
-
----
-
-## 👩‍💻 Author
-
-**Khushi Lathwal**
-MBA Applied Finance | Chitkara University
-Specialization: GRC · ESG · Financial Automation
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://linkedin.com)
+- Works across teams — anyone triggers it by forwarding an email
 
 ---
 
@@ -126,12 +178,31 @@ Specialization: GRC · ESG · Financial Automation
 ```
 nanonets-invoice-automation/
 │
-├── README.md                  # This file
-├── sample-invoices/           # Sample PDF invoices used for testing
-├── extracted-output/          # Google Sheets export (CSV)
-└── guide/                     # Step-by-step setup guide (Word doc)
+├── README.md                          # This file
+├── Nanonets Invoice Automation Guide.docx  # Full step-by-step guide
+├── screenshots (folder)               # Placeholder file
+├── API Connectors Page.png
+├── Access Token - Google account selection.png
+├── Add tool - Google Sheets Search.png
+├── Agent Configure tab - instruction.png
+├── Create Configured Tool dialog.png
+├── Extracted Invoices - Google Sheet output.png
+├── Gmail - invoices sent to agent.png
+├── Google Sheets Update tool Added.png
+├── Google Sheets connector.png
+├── Nanonets Agent dashboard.png
+├── Nanonets homepage.png
+├── Run when - email trigger setup.png
+├── Task Page - running and completed.png
+└── Task detail - milestone compeleted.png
 ```
 
 ---
+
+## 👩‍💻 Author
+
+**Khushi Lathwal**
+MBA Applied Finance | Chitkara University
+Specialization: GRC · ESG · Financial Automation
 
 > 💡 *Built as part of AI Agents & Automation coursework — demonstrating real-world applications of no-code AI in financial operations.*
